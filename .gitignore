@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+users.json
+*backup*
+server.before-*.js
+*.mp3
+__pycache__/
+.venv/

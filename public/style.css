@@ -1,0 +1,2075 @@
+/* ======================================
+   SMARTCROP - PROFESSIONAL WEB APP
+====================================== */
+
+:root {
+  --green: #198754;
+  --dark-green: #14532d;
+  --light-green: #e9f7ee;
+  --white: #ffffff;
+  --text: #20352a;
+  --muted: #718078;
+  --border: #dce8df;
+  --shadow: 0 8px 30px rgba(20, 83, 45, 0.09);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f8f5;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ======================================
+   PROFESSIONAL LOGIN PAGE
+====================================== */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+
+  background-color: #14532d;
+
+  background-image:
+    linear-gradient(
+      120deg,
+      rgba(5, 40, 20, 0.80),
+      rgba(10, 65, 35, 0.40)
+    ),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=85");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 35px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
+  background: #e6f5e9;
+  border-radius: 20px;
+  font-size: 38px;
+}
+
+.auth-card > h1 {
+  text-align: center;
+  color: var(--dark-green);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  padding-bottom: 22px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid var(--border);
+}
+
+.auth-card form h2 {
+  color: #183e29;
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+
+.auth-card form > p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.auth-card label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #304b39;
+}
+
+.auth-card input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d5e2d9;
+  border-radius: 10px;
+  background: #f8fbf9;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.auth-card input::placeholder {
+  color: #89978d;
+}
+
+.auth-card input:focus {
+  outline: none;
+  background: white;
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.10);
+}
+
+#loginBtn,
+#registerBtn {
+  width: 100%;
+  min-height: 49px;
+  margin-top: 23px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #198754, #116b3d);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(25, 135, 84, 0.20);
+}
+
+#loginBtn:hover,
+#registerBtn:hover {
+  background: #105c35;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.auth-switch a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.auth-message {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+.auth-message:empty {
+  display: none;
+}
+
+.auth-card::after {
+  content: "SmartCrop • Digital Farming Platform";
+  display: block;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: #89978d;
+  font-size: 11px;
+}
+
+/* ======================================
+   DASHBOARD HEADER
+====================================== */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 18px 5%;
+  color: white;
+  background: linear-gradient(120deg, #104c2c, #198754);
+  border-bottom: 3px solid #e8c95b;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header-right select {
+  width: auto;
+  min-width: 110px;
+  padding: 9px 12px;
+  font-size: 14px;
+}
+
+#farmerWelcome {
+  font-weight: 600;
+}
+
+#logoutBtn {
+  padding: 9px 18px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#logoutBtn:hover {
+  background: #b83232;
+}
+
+/* ======================================
+   HERO SECTION
+====================================== */
+
+.hero {
+  width: 92%;
+  max-width: 1250px;
+  margin: 30px auto;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  padding: 45px;
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 50, 25, 0.92),
+      rgba(5, 50, 25, 0.30)
+    ),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
+
+  background-color: #14532d;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 6px 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  background: #d9f5e2;
+  color: var(--dark-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #e1f2e6;
+  font-size: 17px;
+  margin-bottom: 23px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 13px 22px;
+  background: white;
+  color: var(--dark-green);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.hero-button:hover {
+  background: #d9f5e2;
+  transform: translateY(-2px);
+}
+
+/* ======================================
+   MAIN PANELS
+====================================== */
+
+.farm-panel,
+.assistant-panel,
+.chatbot-panel,
+.panel {
+  width: 92%;
+  max-width: 1250px;
+  margin: 28px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading h2,
+.assistant-panel h2,
+.chatbot-panel h2 {
+  color: var(--dark-green);
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ======================================
+   FARM INPUT SECTIONS
+====================================== */
+
+.form-section {
+  padding: 24px;
+  margin-bottom: 22px;
+  background: #fbfdfb;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.step-heading {
+  margin-bottom: 18px;
+}
+
+.step-heading h3 {
+  color: var(--dark-green);
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+
+.step-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #304b39;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd9ce;
+  border-radius: 10px;
+  background: white;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.10);
+}
+
+/* ======================================
+   FARMER FRIENDLY CHOICE BUTTONS
+====================================== */
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.choice-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 150px;
+  padding: 25px 12px;
+  text-align: center;
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.choice-card:hover {
+  border-color: var(--green);
+  background: #f0faf3;
+  transform: translateY(-3px);
+}
+
+.choice-card:has(input:checked) {
+  background: #e1f5e7;
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.10);
+}
+
+.choice-card input {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green);
+}
+
+.choice-card strong {
+  color: var(--dark-green);
+  font-size: 18px;
+}
+
+.choice-card small {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.choice-icon {
+  font-size: 45px;
+}
+
+/* ======================================
+   LAND SIZE
+====================================== */
+
+.land-input {
+  display: flex;
+  gap: 15px;
+}
+
+.land-input input {
+  flex: 2;
+  min-width: 0;
+}
+
+.land-input select {
+  flex: 1;
+  min-width: 120px;
+}
+
+.land-hint {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--light-green);
+  color: var(--dark-green);
+  font-size: 14px;
+}
+
+/* ======================================
+   BUTTONS
+====================================== */
+
+button {
+  padding: 13px 21px;
+  border: none;
+  border-radius: 10px;
+  background: var(--green);
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#submitBtn,
+.main-submit {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin-top: 25px;
+  font-size: 17px;
+  background: linear-gradient(120deg, #198754, #116b3d);
+  box-shadow: 0 6px 15px rgba(25, 135, 84, 0.18);
+}
+
+/* ======================================
+   CROP RECOMMENDATION RESULTS
+====================================== */
+
+#results {
+  scroll-margin-top: 20px;
+}
+
+.crop-card,
+.best-crop-card {
+  background: #f0faf3;
+  border: 1px solid #d6eadb;
+  border-left: 5px solid var(--green);
+  border-radius: 15px;
+  padding: 23px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+}
+
+.crop-card h3,
+.best-crop-card h3 {
+  color: var(--dark-green);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.crop-card p,
+.best-crop-card p {
+  margin: 8px 0;
+  color: #52665a;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ======================================
+   CROP COMPARISON TABLE
+====================================== */
+
+.comparison-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.comparison-table th {
+  background: #176b3a;
+  color: white;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: #f1f8f1;
+}
+
+.comparison-table .comparison-best-row {
+  background: #e1f5e5;
+  font-weight: bold;
+}
+
+.profit-value {
+  color: #16833b;
+  font-weight: bold;
+}
+
+.loss-value {
+  color: #d62828;
+  font-weight: bold;
+}
+
+/* ======================================
+   VOICE ASSISTANT
+====================================== */
+
+.assistant-panel {
+  background: linear-gradient(140deg, #ffffff, #f0faf3);
+}
+
+.assistant-panel > label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.assistant-panel > select {
+  margin-bottom: 15px;
+}
+
+#micBtn,
+#speakAnswerBtn {
+  margin-top: 10px;
+}
+
+#voiceStatus,
+#voiceTranscript,
+#voiceAnswer {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 9px;
+  overflow-wrap: anywhere;
+}
+
+#voiceStatus {
+  background: #eef8f0;
+  color: var(--dark-green);
+}
+
+#voiceTranscript {
+  background: #f5f7f5;
+}
+
+#voiceAnswer {
+  background: #e9f7ee;
+  color: var(--dark-green);
+  font-weight: 600;
+}
+
+/* ======================================
+   FARMING CHATBOT
+====================================== */
+
+#chatMessages,
+.chat-messages {
+  min-height: 150px;
+  max-height: 350px;
+  overflow-y: auto;
+  padding: 18px;
+  margin: 18px 0;
+  background: #f6faf7;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+}
+
+.user-message,
+.assistant-message {
+  padding: 13px 16px;
+  border-radius: 12px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.user-message {
+  background: #dcf3e3;
+  margin-left: 12%;
+}
+
+.assistant-message {
+  background: #edf2f8;
+  margin-right: 12%;
+}
+
+#chatForm {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#chatForm input {
+  flex: 1;
+  min-width: 0;
+}
+
+#chatForm button {
+  white-space: nowrap;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer {
+  margin-top: 45px;
+  padding: 30px 20px;
+  background: #104c2c;
+  color: white;
+  text-align: center;
+}
+
+footer small {
+  display: block;
+  max-width: 750px;
+  margin: 12px auto 0;
+  color: #d6e8da;
+  font-size: 13px;
+}
+
+/* ======================================
+   MOBILE RESPONSIVE DESIGN
+====================================== */
+
+@media (max-width: 600px) {
+
+  .auth-container {
+    padding: 20px 14px;
+  }
+
+  .auth-card {
+    padding: 25px 23px;
+    border-radius: 20px;
+  }
+
+  .auth-card > h1 {
+    font-size: 28px;
+  }
+
+  .auth-card form h2 {
+    font-size: 22px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .farm-panel,
+  .assistant-panel,
+  .chatbot-panel,
+  .panel {
+    padding: 20px 15px;
+  }
+
+  .form-section {
+    padding: 17px 12px;
+  }
+
+  .section-heading h2,
+  .assistant-panel h2,
+  .chatbot-panel h2 {
+    font-size: 21px;
+  }
+
+  .step-heading h3 {
+    font-size: 17px;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .choice-card {
+    min-height: 130px;
+    padding: 22px 8px;
+  }
+
+  .choice-card strong {
+    font-size: 14px;
+  }
+
+  .choice-card small {
+    font-size: 12px;
+  }
+
+  .land-input {
+    flex-direction: column;
+  }
+
+  #submitBtn {
+    font-size: 14px;
+  }
+
+  #chatForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #chatForm button {
+    width: 100%;
+  }
+
+  .user-message {
+    margin-left: 3%;
+  }
+
+  .assistant-message {
+    margin-right: 3%;
+  }
+}
+
+/* ======================================
+   ACCESSIBILITY
+====================================== */
+
+button:focus-visible,
+a:focus-visible,
+.choice-card:focus-within {
+  outline: 3px solid #e5bd43;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ======================================
+   SMARTCROP - LIVE WEATHER DASHBOARD
+====================================== */
+
+.weather-panel {
+  width: 92%;
+  max-width: 1250px;
+  margin: 28px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+/* WEATHER HEADER */
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.weather-header h2 {
+  color: var(--dark-green);
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.weather-header p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.weather-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #e9f7ee;
+  color: #14532d;
+  border: 1px solid #cde8d5;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* LOCATION DETECTION */
+
+.weather-location {
+  padding: 22px;
+  margin-bottom: 20px;
+  background: #f0faf3;
+  border: 1px solid #d6eadb;
+  border-radius: 15px;
+}
+
+#detectLocationBtn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(
+    120deg,
+    #198754,
+    #116b3d
+  );
+  font-size: 17px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.15);
+}
+
+#weatherLocation {
+  margin-top: 12px;
+  color: var(--dark-green);
+  font-size: 14px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* MANUAL LOCATION SEARCH */
+
+.weather-search {
+  margin-bottom: 20px;
+}
+
+.weather-search label {
+  margin-bottom: 10px;
+  color: var(--dark-green);
+  font-size: 15px;
+}
+
+.weather-search-input {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.weather-search-input input {
+  flex: 1;
+  min-width: 0;
+  background: #f8fbf9;
+}
+
+#weatherSearchBtn {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+#weatherSearchResults {
+  display: grid;
+  gap: 10px;
+}
+
+#weatherSearchResults button {
+  width: 100%;
+  text-align: left;
+  background: #eef8f1;
+  color: var(--dark-green);
+  border: 1px solid var(--border);
+}
+
+#weatherSearchResults button:hover {
+  background: #d9f2e1;
+}
+
+#weatherStatus {
+  padding: 12px;
+  margin: 12px 0;
+  color: var(--dark-green);
+  background: #eef8f0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+#weatherStatus:empty {
+  display: none;
+}
+
+/* CURRENT WEATHER */
+
+.weather-current {
+  position: relative;
+  overflow: hidden;
+  padding: 35px;
+  margin: 25px 0;
+  border-radius: 20px;
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #075985,
+    #0284c7,
+    #38bdf8
+  );
+
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.18);
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.weather-icon {
+  font-size: 85px;
+  line-height: 1.2;
+}
+
+#weatherTemperature {
+  font-size: clamp(40px, 7vw, 58px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#weatherCondition {
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+#weatherUpdated {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #e0f2fe;
+}
+
+/* WEATHER INFORMATION CARDS */
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  padding: 22px 12px;
+  text-align: center;
+  background: #f5faf6;
+  border: 1px solid #dce8df;
+  border-radius: 16px;
+  transition: 0.2s;
+}
+
+.weather-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--green);
+  box-shadow: var(--shadow);
+}
+
+.weather-card-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  color: #52665a;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.weather-card h3 {
+  color: var(--dark-green);
+  font-size: 25px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+/* SEVEN DAY FORECAST */
+
+.forecast-section {
+  padding: 24px;
+  margin: 25px 0;
+  background: #f8fbfd;
+  border: 1px solid #dbe7ee;
+  border-radius: 18px;
+}
+
+.forecast-section > h3 {
+  color: #164e63;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.forecast-card {
+  padding: 18px 8px;
+  text-align: center;
+  background: white;
+  border: 1px solid #dce7ed;
+  border-radius: 14px;
+  transition: 0.2s;
+  overflow-wrap: anywhere;
+}
+
+.forecast-card:hover {
+  background: #eff9ff;
+  border-color: #38bdf8;
+}
+
+.forecast-card h4 {
+  color: #164e63;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.forecast-icon {
+  display: block;
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.forecast-card strong {
+  display: block;
+  font-size: 17px;
+  color: #20352a;
+  margin-bottom: 5px;
+}
+
+.forecast-card p {
+  font-size: 13px;
+  color: #52665a;
+  margin: 5px 0;
+}
+
+.forecast-card small {
+  display: block;
+  font-size: 12px;
+  color: #0369a1;
+  margin-top: 5px;
+}
+
+/* EXPECTED RAINFALL */
+
+.rainfall-summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  margin: 25px 0;
+  background: #eaf6ff;
+  border: 1px solid #c6e3f7;
+  border-left: 5px solid #0284c7;
+  border-radius: 15px;
+}
+
+.rainfall-summary > span {
+  font-size: 45px;
+}
+
+.rainfall-summary h3 {
+  color: #075985;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+#totalRainfallValue {
+  display: block;
+  color: #0369a1;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* FARMING ADVICE */
+
+.weather-advice {
+  padding: 25px;
+  margin-top: 25px;
+  background: linear-gradient(
+    120deg,
+    #e6f7e9,
+    #f5fcf6
+  );
+  border: 1px solid #cde8d5;
+  border-left: 5px solid #198754;
+  border-radius: 15px;
+}
+
+.weather-advice h3 {
+  color: var(--dark-green);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-advice p {
+  color: #304b39;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.weather-disclaimer {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.weather-source {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.weather-source a {
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.weather-source a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+  .weather-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+  .weather-panel {
+    padding: 20px 15px;
+    border-radius: 18px;
+  }
+
+  .weather-header h2 {
+    font-size: 22px;
+  }
+
+  .weather-header p {
+    font-size: 13px;
+  }
+
+  .weather-location {
+    padding: 15px;
+  }
+
+  #detectLocationBtn {
+    font-size: 15px;
+  }
+
+  .weather-search-input {
+    flex-direction: column;
+  }
+
+  #weatherSearchBtn {
+    width: 100%;
+  }
+
+  .weather-current {
+    padding: 25px 15px;
+  }
+
+  .weather-main {
+    gap: 15px;
+  }
+
+  .weather-icon {
+    font-size: 60px;
+  }
+
+  #weatherTemperature {
+    font-size: 42px;
+  }
+
+  #weatherCondition {
+    font-size: 17px;
+  }
+
+  .weather-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .weather-card {
+    min-height: 130px;
+    padding: 15px 8px;
+  }
+
+  .weather-card-icon {
+    font-size: 28px;
+  }
+
+  .weather-card p {
+    font-size: 12px;
+  }
+
+  .weather-card h3 {
+    font-size: 20px;
+  }
+
+  .forecast-section {
+    padding: 16px 12px;
+  }
+
+  .forecast-section > h3 {
+    font-size: 18px;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .rainfall-summary {
+    padding: 18px 12px;
+    gap: 12px;
+  }
+
+  .rainfall-summary > span {
+    font-size: 32px;
+  }
+
+  .rainfall-summary h3 {
+    font-size: 15px;
+  }
+
+  #totalRainfallValue {
+    font-size: 24px;
+  }
+
+  .weather-advice {
+    padding: 18px;
+  }
+
+  .weather-advice h3 {
+    font-size: 18px;
+  }
+
+  .weather-advice p {
+    font-size: 14px;
+  }
+
+}
+/* ======================================
+   SMARTCROP - CROP CULTIVATION GUIDE
+====================================== */
+
+.cultivation-panel {
+  width: 92%;
+  max-width: 1250px;
+  margin: 28px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+/* CULTIVATION HEADER */
+
+.cultivation-header {
+  margin-bottom: 25px;
+}
+
+.cultivation-header h2 {
+  color: var(--dark-green);
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.cultivation-header p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* CROP SELECTION GRID */
+
+.cultivation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* CROP CARDS */
+
+.cultivation-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 230px;
+  padding: 25px 15px;
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #f0faf3
+  );
+  color: var(--dark-green);
+  border: 2px solid #dce8df;
+  border-radius: 18px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.cultivation-card:hover {
+  background: #e4f5e9;
+  border-color: var(--green);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(20, 83, 45, 0.12);
+}
+
+.cultivation-card.active,
+.cultivation-card[aria-pressed="true"] {
+  background: #dcf3e3;
+  border-color: #198754;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.12);
+}
+
+/* CROP ICON */
+
+.cultivation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  margin-bottom: 15px;
+  background: #e6f5e9;
+  border-radius: 50%;
+  font-size: 55px;
+}
+
+.cultivation-card h3 {
+  color: #14532d;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.cultivation-card p {
+  color: #718078;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.guide-view {
+  display: inline-block;
+  padding: 9px 20px;
+  background: #198754;
+  color: white;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* SELECTED CROP DETAILS */
+
+#cultivationDetails {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f8fcf9;
+  border: 1px solid #d6eadb;
+  border-radius: 20px;
+  scroll-margin-top: 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* SELECTED CROP HEADER */
+
+.cultivation-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background: linear-gradient(
+    120deg,
+    #14532d,
+    #198754
+  );
+  color: white;
+  border-radius: 16px;
+}
+
+#selectedCropIcon {
+  font-size: 55px;
+  flex-shrink: 0;
+}
+
+.cultivation-detail-header > div {
+  flex: 1;
+  min-width: 0;
+}
+
+#selectedCropName {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#selectedCropDescription {
+  color: #e1f2e6;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+#closeCultivationBtn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 18px;
+}
+
+#closeCultivationBtn:hover {
+  background: #c0392b;
+}
+
+/* CROP IMAGE */
+
+.cultivation-image-wrapper:has(img:not([hidden])) {
+  margin-bottom: 25px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+#cultivationImage {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* CULTIVATION INFORMATION GRID */
+
+.cultivation-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.cultivation-info-card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #dce8df;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(20, 83, 45, 0.05);
+  transition: 0.2s;
+}
+
+.cultivation-info-card:hover {
+  border-color: #198754;
+  transform: translateY(-2px);
+}
+
+.cultivation-info-card > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 15px;
+  background: #e9f7ee;
+  border-radius: 13px;
+  font-size: 30px;
+}
+
+.cultivation-info-card h3 {
+  color: #14532d;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cultivation-info-card p {
+  color: #52665a;
+  font-size: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* IMPORTANT FARMING TIPS */
+
+.cultivation-tips {
+  padding: 25px;
+  margin-top: 25px;
+  background: #fff9e6;
+  border: 1px solid #f0dfa5;
+  border-left: 5px solid #e5bd43;
+  border-radius: 15px;
+}
+
+.cultivation-tips h3 {
+  color: #795b12;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cultivation-tips p {
+  color: #66552b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* VOICE CULTIVATION GUIDE */
+
+#listenCultivationBtn {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  margin-top: 25px;
+  background: linear-gradient(
+    120deg,
+    #198754,
+    #116b3d
+  );
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(25, 135, 84, 0.15);
+}
+
+#listenCultivationBtn:hover {
+  background: #14532d;
+}
+
+#guideVoiceStatus {
+  padding: 12px;
+  margin-top: 12px;
+  background: #e9f7ee;
+  color: #14532d;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#guideVoiceStatus:empty {
+  display: none;
+}
+
+/* DISCLAIMER */
+
+.cultivation-disclaimer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #dce8df;
+  color: #718078;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+  .cultivation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .cultivation-card {
+    min-height: 210px;
+  }
+
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+  .cultivation-panel {
+    padding: 20px 15px;
+    border-radius: 18px;
+  }
+
+  .cultivation-header h2 {
+    font-size: 22px;
+  }
+
+  .cultivation-header p {
+    font-size: 13px;
+  }
+
+  .cultivation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .cultivation-card {
+    min-height: 190px;
+    padding: 15px 8px;
+  }
+
+  .cultivation-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 38px;
+  }
+
+  .cultivation-card h3 {
+    font-size: 16px;
+  }
+
+  .cultivation-card p {
+    font-size: 12px;
+  }
+
+  .guide-view {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  #cultivationDetails {
+    padding: 12px;
+  }
+
+  .cultivation-detail-header {
+    padding: 18px 12px;
+    gap: 10px;
+  }
+
+  #selectedCropIcon {
+    font-size: 35px;
+  }
+
+  #selectedCropName {
+    font-size: 20px;
+  }
+
+  #selectedCropDescription {
+    font-size: 12px;
+  }
+
+  #cultivationImage {
+    height: 200px;
+  }
+
+  .cultivation-info-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cultivation-info-card {
+    padding: 18px;
+  }
+
+  .cultivation-info-card h3 {
+    font-size: 16px;
+  }
+
+  .cultivation-info-card p {
+    font-size: 14px;
+  }
+
+  .cultivation-tips {
+    padding: 18px;
+  }
+
+  #listenCultivationBtn {
+    font-size: 14px;
+  }
+
+}
+/* =================================
+   SMARTCROP 200 CROP KNOWLEDGE CENTRE
+================================= */
+
+.catalogue-panel {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#catalogueTitle {
+  color: #14532d;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#catalogueDescription {
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#catalogueSearch,
+#catalogueCategory {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #c8e6c9;
+  border-radius: 12px;
+  background: #f0fdf4;
+  color: #14532d;
+  font-size: 16px;
+  outline: none;
+}
+
+#catalogueSearch:focus,
+#catalogueCategory:focus {
+  border-color: #16a34a;
+}
+
+#catalogueCount {
+  color: #15803d;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#catalogueGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill, minmax(150px, 1fr)
+  );
+  gap: 15px;
+  max-height: 650px;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.catalogue-card {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 15px;
+  padding: 20px 10px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-3px);
+  background: #dcfce7;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.catalogue-icon {
+  display: block;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.catalogue-card h3 {
+  font-size: 17px;
+  color: #14532d;
+  margin: 8px 0;
+}
+
+.catalogue-card p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 5px 0;
+}
+
+.catalogue-tag {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .catalogue-panel {
+    margin: 15px 10px;
+    padding: 15px;
+  }
+
+  #catalogueTitle {
+    font-size: 22px;
+  }
+
+  #catalogueGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .catalogue-icon {
+    font-size: 38px;
+  }
+}
+/* Crop information popup centre fix */
+
+dialog[open] {
+  position: fixed !important;
+  inset: 0 !important;
+  margin: auto !important;
+  transform: none !important;
+  width: 90% !important;
+  max-width: 650px !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* SMARTCROP CHATBOT MESSAGE DESIGN */
+
+#chatMessages .assistant-message {
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word;
+    line-height: 1.9;
+    font-size: 17px;
+    padding: 20px;
+    background: #edf5ef;
+    border-left: 4px solid #198754;
+    border-radius: 12px;
+}
+
+#chatMessages .assistant-message strong {
+    color: #14532d;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#chatMessages .user-message {
+    white-space: pre-wrap;
+    line-height: 1.7;
+}
+
+#chatMessages {
+    max-height: 650px;
+    overflow-y: auto;
+}
+/* GROWING DURATION OPTIONS */
+
+.duration-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.duration-options .choice-card {
+    padding: 20px;
+    border: 2px solid #d5e5d8;
+    border-radius: 12px;
+    background: #f5faf6;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.duration-options .choice-card:hover {
+    border-color: #198754;
+}
+
+.duration-options .choice-card:has(input:checked) {
+    background: #dff3e4;
+    border-color: #198754;
+}
+
+.duration-options strong {
+    display: block;
+    font-size: 18px;
+    color: #14532d;
+}
+
+.duration-options small {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+}
+/* Hide automatic district detection */
+#detectDistrictBtn,
+#districtLocationStatus {
+    display: none !important;
+}
+/* SMARTCROP ASSISTANT DESIGN */
+
+#voiceAnswer,
+#chatMessages .assistant-message,
+#chatMessages .assistant-message span {
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+#voiceAnswer {
+    background: #eaf7ee;
+    color: #14532d;
+    padding: 20px;
+    border-left: 5px solid #198754;
+    border-radius: 12px;
+    max-height: 500px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#chatMessages .assistant-message {
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+#chatMessages .assistant-message strong {
+    display: block;
+    margin-bottom: 10px;
+}

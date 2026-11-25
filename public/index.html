@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCrop - Smart Farming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOGIN AND REGISTRATION -->
+
+  <section id="authSection" class="auth-container">
+
+    <div class="auth-card">
+
+      <div class="auth-logo">🌱</div>
+      <h1>SmartCrop</h1>
+      <p class="auth-subtitle">Smart Farming, Better Future</p>
+
+      <!-- LOGIN -->
+
+      <form id="loginForm">
+
+        <h2>Welcome Back!</h2>
+        <p>Login to your farmer account</p>
+
+        <label>Email or Mobile Number</label>
+
+        <input
+          type="text"
+          id="loginIdentifier"
+          placeholder="Enter email or mobile number"
+          required
+        >
+
+        <label>Password</label>
+
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter your password"
+          required
+        >
+
+        <button type="submit" id="loginBtn">
+          LOGIN
+        </button>
+
+        <p id="loginMessage" class="auth-message"></p>
+
+        <p class="auth-switch">
+          New farmer?
+          <a href="#" id="showRegister">Create Account</a>
+        </p>
+
+      </form>
+
+      <!-- REGISTRATION -->
+
+      <form id="registerForm" hidden>
+
+        <h2>Create Account</h2>
+        <p>Register as a SmartCrop farmer</p>
+
+        <label>Farmer Name</label>
+
+        <input
+          type="text"
+          id="registerName"
+          placeholder="Enter your full name"
+          required
+        >
+
+        <label>Mobile Number</label>
+
+        <input
+          type="tel"
+          id="registerMobile"
+          placeholder="Enter 10-digit mobile number"
+          maxlength="10"
+          pattern="[0-9]{10}"
+          required
+        >
+
+        <label>Email Address</label>
+
+        <input
+          type="email"
+          id="registerEmail"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label>Password</label>
+
+        <input
+          type="password"
+          id="registerPassword"
+          placeholder="Minimum 8 characters"
+          minlength="8"
+          required
+        >
+
+        <button type="submit" id="registerBtn">
+          CREATE ACCOUNT
+        </button>
+
+        <p id="registerMessage" class="auth-message"></p>
+
+        <p class="auth-switch">
+          Already have an account?
+          <a href="#" id="showLogin">Login Here</a>
+        </p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAIN APPLICATION -->
+
+  <div id="appSection" hidden>
+
+    <!-- HEADER -->
+
+    <header class="main-header">
+
+      <div class="brand">
+        🌱 SmartCrop
+      </div>
+
+      <div class="header-right">
+
+        <span id="farmerWelcome">
+          Welcome, Farmer!
+        </span>
+
+        <select id="language">
+          <option value="en">English</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+
+        <button id="logoutBtn" type="button">
+          Logout
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <span class="hero-tag">
+          SMART AGRICULTURE
+        </span>
+
+        <h1 id="welcomeTitle">
+          Grow Smart, Earn More
+        </h1>
+
+        <p id="welcomeText">
+          Find the best crops for your farmland.
+        </p>
+
+        <a href="#farmSection" class="hero-button">
+          Explore Crop Recommendations →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEW WEATHER FORECAST SECTION -->
+
+    <section class="weather-panel" id="weatherSection">
+
+      <div class="weather-header">
+
+        <div>
+
+          <h2 id="weatherTitle">
+            🌦️ Live Weather Forecast
+          </h2>
+
+          <p id="weatherDescription">
+            Know your weather. Plan your farming.
+          </p>
+
+        </div>
+
+        <span class="weather-badge" id="weatherBadge">
+          🌐 Online Weather
+        </span>
+
+      </div>
+
+
+      <!-- LOCATION DETECTION -->
+
+      <div class="weather-location">
+
+        <button type="button" id="detectLocationBtn">
+          📍 Detect My Location
+        </button>
+
+        <p id="weatherLocation">
+          Select your farm location to get weather details.
+        </p>
+
+      </div>
+
+
+      <!-- MANUAL LOCATION SEARCH -->
+
+      <form id="weatherSearchForm" class="weather-search">
+
+        <label for="weatherCity" id="weatherCityLabel">
+          Or enter your village or city
+        </label>
+
+        <div class="weather-search-input">
+
+          <input
+            type="text"
+            id="weatherCity"
+            placeholder="Example: Udupi, Karnataka"
+            required
+          >
+
+          <button type="submit" id="weatherSearchBtn">
+            🔍 Search
+          </button>
+
+        </div>
+
+      </form>
+
+      <div id="weatherSearchResults"></div>
+
+      <p id="weatherStatus" role="status" aria-live="polite"></p>
+
+
+      <!-- WEATHER RESULTS -->
+
+      <div id="weatherData" hidden>
+
+        <div class="weather-current">
+
+          <div class="weather-main">
+
+            <span id="weatherIcon" class="weather-icon">
+              🌤️
+            </span>
+
+            <div>
+
+              <h3 id="weatherTemperature">--°C</h3>
+
+              <p id="weatherCondition">--</p>
+
+              <small id="weatherUpdated"></small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- WEATHER INFORMATION CARDS -->
+
+        <div class="weather-grid">
+
+          <div class="weather-card">
+
+            <span class="weather-card-icon">🌡️</span>
+
+            <p id="temperatureLabel">
+              Temperature
+            </p>
+
+            <h3 id="temperatureValue">--°C</h3>
+
+          </div>
+
+          <div class="weather-card">
+
+            <span class="weather-card-icon">💧</span>
+
+            <p id="humidityLabel">
+              Humidity
+            </p>
+
+            <h3 id="humidityValue">--%</h3>
+
+          </div>
+
+          <div class="weather-card">
+
+            <span class="weather-card-icon">🌧️</span>
+
+            <p id="rainProbabilityLabel">
+              Today's Rain Probability
+            </p>
+
+            <h3 id="rainProbabilityValue">--%</h3>
+
+          </div>
+
+          <div class="weather-card">
+
+            <span class="weather-card-icon">💨</span>
+
+            <p id="windLabel">
+              Wind Speed
+            </p>
+
+            <h3 id="windValue">-- km/h</h3>
+
+          </div>
+
+        </div>
+
+
+        <!-- SEVEN DAY FORECAST -->
+
+        <div class="forecast-section">
+
+          <h3 id="forecastTitle">
+            📅 7-Day Weather Forecast
+          </h3>
+
+          <div id="forecastCards" class="forecast-grid">
+          </div>
+
+        </div>
+
+
+        <!-- TOTAL RAINFALL -->
+
+        <div class="rainfall-summary">
+
+          <span>🌧️</span>
+
+          <div>
+
+            <h3 id="totalRainfallLabel">
+              Expected Rainfall in Next 7 Days
+            </h3>
+
+            <strong id="totalRainfallValue">-- mm</strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- FARMING ADVICE -->
+
+        <div class="weather-advice">
+
+          <h3 id="weatherAdviceTitle">
+            🌱 Weather-Based Farming Advice
+          </h3>
+
+          <p id="weatherAdvice">
+            Weather-based suggestions will appear here.
+          </p>
+
+        </div>
+
+
+        <p class="weather-disclaimer" id="weatherDisclaimer">
+          Weather forecasts are estimates and may change.
+          Check local conditions before making farming decisions.
+        </p>
+
+        <small class="weather-source">
+          Weather data:
+          <a
+            href="https://open-meteo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-Meteo
+          </a>
+        </small>
+
+      </div>
+
+    </section>
+
+
+    <!-- CROP RECOMMENDATION -->
+
+    <main class="farm-panel" id="farmSection">
+
+      <div class="section-heading">
+
+        <h2>🌾 Crop Recommendation</h2>
+
+        <p>
+          Enter your farm details to find suitable crops.
+        </p>
+
+      </div>
+
+      <form id="cropForm">
+<!-- KARNATAKA DISTRICT SELECTION -->
+
+<div class="form-section">
+
+    <div class="step-heading">
+        <h3 id="districtTitle">
+            📍 Select Your District
+        </h3>
+
+        <p id="districtDescription">
+            Select your district in Karnataka.
+        </p>
+    </div>
+
+<button type="button" id="detectDistrictBtn"
+    style="display:block; width:100%; padding:15px;
+    background:#198754; color:white;
+    border:none; border-radius:10px;
+    font-size:18px; margin-bottom:15px;">
+    📍 Detect My District
+</button>
+
+<p id="districtLocationStatus"
+    style="color:#198754; margin-bottom:10px;">
+</p>
+
+<select id="district" name="district" required>
+        <option value="" id="districtPlaceholder">
+            Select District
+        </option>
+
+        <option value="Bagalkot">Bagalkot</option>
+        <option value="Ballari">Ballari</option>
+        <option value="Belagavi">Belagavi</option>
+        <option value="Bengaluru Rural">Bengaluru Rural</option>
+        <option value="Bengaluru Urban">Bengaluru Urban</option>
+        <option value="Bidar">Bidar</option>
+        <option value="Chamarajanagar">Chamarajanagar</option>
+        <option value="Chikkaballapur">Chikkaballapur</option>
+        <option value="Chikkamagaluru">Chikkamagaluru</option>
+        <option value="Chitradurga">Chitradurga</option>
+        <option value="Dakshina Kannada">Dakshina Kannada</option>
+        <option value="Davanagere">Davanagere</option>
+        <option value="Dharwad">Dharwad</option>
+        <option value="Gadag">Gadag</option>
+        <option value="Hassan">Hassan</option>
+        <option value="Haveri">Haveri</option>
+        <option value="Kalaburagi">Kalaburagi</option>
+        <option value="Kodagu">Kodagu</option>
+        <option value="Kolar">Kolar</option>
+        <option value="Koppal">Koppal</option>
+        <option value="Mandya">Mandya</option>
+        <option value="Mysuru">Mysuru</option>
+        <option value="Raichur">Raichur</option>
+        <option value="Ramanagara">Ramanagara</option>
+        <option value="Shivamogga">Shivamogga</option>
+        <option value="Tumakuru">Tumakuru</option>
+        <option value="Udupi">Udupi</option>
+        <option value="Uttara Kannada">Uttara Kannada</option>
+        <option value="Vijayapura">Vijayapura</option>
+        <option value="Vijayanagara">Vijayanagara</option>
+        <option value="Yadgir">Yadgir</option>
+
+    </select>
+
+</div>
+
+<!-- END DISTRICT SELECTION -->
+<!-- CROP CATEGORY SELECTION -->
+
+<div class="form-section" id="cropCategorySection">
+
+    <div class="step-heading">
+        <h3 id="cropCategoryTitle">
+            🌱 Select Crop Category
+        </h3>
+
+        <p id="cropCategoryDescription">
+            Choose the type of crop you want to grow.
+        </p>
+    </div>
+
+    <div class="duration-options">
+
+        <label class="choice-card">
+            <input type="radio" name="cropCategoryChoice"
+                   value="food" checked>
+            <strong id="categoryFood">🌾 Food Crops</strong>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio" name="cropCategoryChoice"
+                   value="commercial">
+            <strong id="categoryCommercial">💰 Commercial Crops</strong>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio" name="cropCategoryChoice"
+                   value="vegetables">
+            <strong id="categoryVegetables">🥕 Vegetables</strong>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio" name="cropCategoryChoice"
+                   value="fruits">
+            <strong id="categoryFruits">🥭 Fruits</strong>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio" name="cropCategoryChoice"
+                   value="fodder">
+            <strong id="categoryFodder">🌿 Fodder Crops</strong>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio" name="cropCategoryChoice"
+                   value="all">
+            <strong id="categoryAll">🌱 All Crops</strong>
+        </label>
+
+    </div>
+
+</div>
+
+<!-- END CROP CATEGORY SELECTION -->
+        <!-- SOIL -->
+
+        <div class="form-section">
+
+          <div class="step-heading">
+
+            <h3>1. Select Soil Type</h3>
+
+            <p>Select the soil found in your farmland.</p>
+
+          </div>
+
+          <select id="soil" required>
+
+            <option value="">Select soil type</option>
+            <option value="red">Red Soil</option>
+            <option value="black">Black Soil</option>
+            <option value="clay">Clay Soil</option>
+            <option value="sandy">Sandy Soil</option>
+            <option value="laterite">Laterite Soil</option>
+            <option value="alluvial">Alluvial Soil</option>
+
+          </select>
+
+        </div>
+
+
+        <!-- SEASON -->
+
+        <div class="form-section">
+
+          <div class="step-heading">
+
+            <h3>2. Select Growing Season</h3>
+
+            <p>Choose the current growing season.</p>
+
+          </div>
+
+          <input type="hidden" id="season" value="">
+
+          <div class="choice-grid">
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="seasonChoice"
+                value="kharif"
+                required
+              >
+
+              <strong>🌧️ Rainy Season</strong>
+              <small>Monsoon / Kharif</small>
+
+            </label>
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="seasonChoice"
+                value="rabi"
+              >
+
+              <strong>🌤️ Winter Season</strong>
+              <small>Rabi</small>
+
+            </label>
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="seasonChoice"
+                value="summer"
+              >
+
+              <strong>☀️ Summer</strong>
+              <small>Hot season</small>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- RAINFALL -->
+
+        <div class="form-section">
+
+          <div class="step-heading">
+
+            <h3>3. Select Rainfall</h3>
+
+            <p>Choose the picture that looks like your area.</p>
+
+          </div>
+
+          <input type="hidden" id="rainfall" value="">
+
+          <div class="choice-grid">
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="rainChoice"
+                value="400"
+                required
+              >
+
+              <strong>☀️ Low Rain</strong>
+              <small>Very little rain</small>
+
+            </label>
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="rainChoice"
+                value="800"
+              >
+
+              <strong>🌦️ Medium Rain</strong>
+              <small>Normal rainfall</small>
+
+            </label>
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="rainChoice"
+                value="1400"
+              >
+
+              <strong>🌧️ Heavy Rain</strong>
+              <small>Lots of rain</small>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- WATER -->
+
+        <div class="form-section">
+
+          <div class="step-heading">
+
+            <h3>4. Water Availability</h3>
+
+            <p>Select the water availability on your farm.</p>
+
+          </div>
+
+          <input type="hidden" id="water" value="">
+
+          <div class="choice-grid">
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="waterChoice"
+                value="low"
+                required
+              >
+
+              <strong>💧 Low</strong>
+              <small>Very little water</small>
+
+            </label>
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="waterChoice"
+                value="medium"
+              >
+
+              <strong>🚿 Medium</strong>
+              <small>Some water</small>
+
+            </label>
+
+            <label class="choice-card">
+
+              <input
+                type="radio"
+                name="waterChoice"
+                value="high"
+              >
+
+              <strong>🌊 High</strong>
+              <small>Plenty of water</small>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- LAND SIZE -->
+
+        <div class="form-section">
+
+          <div class="step-heading">
+
+            <h3>5. Land Size</h3>
+
+            <p>Enter your farmland size.</p>
+
+          </div>
+
+          <div class="land-input">
+
+            <input
+              type="number"
+              id="landSize"
+              placeholder="Enter land size"
+              min="0.01"
+              step="0.01"
+              required
+            >
+
+            <select id="landUnit">
+
+              <option value="acre">Acre</option>
+              <option value="gunta">Gunta</option>
+
+            </select>
+
+          </div>
+
+          <p class="land-hint">
+            1 Acre = 40 Gunta
+          </p>
+
+        </div>
+
+<!-- GROWING DURATION FILTER -->
+
+<div class="form-section">
+
+    <div class="step-heading">
+        <h3 id="durationTitle">
+            6. Select Growing Duration
+        </h3>
+
+        <p id="durationDescription">
+            Choose your preferred harvest time.
+        </p>
+    </div>
+
+    <div class="duration-options">
+
+        <label class="choice-card">
+            <input type="radio"
+                   name="durationChoice"
+                   value="all" checked>
+            <strong id="durationAll">🌾 All Crops</strong>
+            <small id="durationAllDesc">Any duration</small>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio"
+                   name="durationChoice"
+                   value="short">
+            <strong id="durationShort">🌱 Short-term</strong>
+            <small id="durationShortDesc">Up to 4 months</small>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio"
+                   name="durationChoice"
+                   value="medium">
+            <strong id="durationMedium">🌿 Medium-term</strong>
+            <small id="durationMediumDesc">Over 4 to 12 months</small>
+        </label>
+
+        <label class="choice-card">
+            <input type="radio"
+                   name="durationChoice"
+                   value="long">
+            <strong id="durationLong">🌳 Long-term</strong>
+            <small id="durationLongDesc">Over 1 year</small>
+        </label>
+
+    </div>
+
+</div>
+        <button type="submit" id="submitBtn">
+          GET CROP RECOMMENDATIONS
+        </button>
+
+      </form>
+
+      <!-- CROP RESULTS -->
+
+      <section id="results"></section>
+
+    </main>
+
+
+    <!-- VOICE ASSISTANT -->
+     <!-- =====================================
+     SMARTCROP CROP CULTIVATION GUIDE
+====================================== -->
+
+<section class="cultivation-panel" id="cultivationSection">
+
+  <div class="cultivation-header">
+
+    <h2 id="cultivationTitle">
+      🌱 Crop Cultivation Guide
+    </h2>
+
+    <p id="cultivationDescription">
+      Select a crop to learn how to grow it.
+    </p>
+
+  </div>
+
+  <!-- CROP SELECTION CARDS -->
+
+  <div class="cultivation-grid">
+
+    <!-- PADDY -->
+
+    <button
+      type="button"
+      class="cultivation-card"
+      data-crop="paddy"
+    >
+
+      <span class="cultivation-icon">🌾</span>
+
+      <h3 id="guidePaddy">Paddy</h3>
+
+      <p id="guidePaddyDesc">
+        Rice Cultivation
+      </p>
+
+      <span class="guide-view" data-guide-view>
+        View Guide →
+      </span>
+
+    </button>
+
+
+    <!-- MAIZE -->
+
+    <button
+      type="button"
+      class="cultivation-card"
+      data-crop="maize"
+    >
+
+      <span class="cultivation-icon">🌽</span>
+
+      <h3 id="guideMaize">Maize</h3>
+
+      <p id="guideMaizeDesc">
+        Maize Cultivation
+      </p>
+
+      <span class="guide-view" data-guide-view>
+        View Guide →
+      </span>
+
+    </button>
+
+
+    <!-- GROUNDNUT -->
+
+    <button
+      type="button"
+      class="cultivation-card"
+      data-crop="groundnut"
+    >
+
+      <span class="cultivation-icon">🥜</span>
+
+      <h3 id="guideGroundnut">Groundnut</h3>
+
+      <p id="guideGroundnutDesc">
+        Groundnut Cultivation
+      </p>
+
+      <span class="guide-view" data-guide-view>
+        View Guide →
+      </span>
+
+    </button>
+
+
+    <!-- RAGI -->
+
+    <button
+      type="button"
+      class="cultivation-card"
+      data-crop="ragi"
+    >
+
+      <span class="cultivation-icon">🌾</span>
+
+      <h3 id="guideRagi">Ragi</h3>
+
+      <p id="guideRagiDesc">
+        Finger Millet Cultivation
+      </p>
+
+      <span class="guide-view" data-guide-view>
+        View Guide →
+      </span>
+
+    </button>
+
+
+    <!-- GREEN GRAM -->
+
+    <button
+      type="button"
+      class="cultivation-card"
+      data-crop="greenGram"
+    >
+
+      <span class="cultivation-icon">🌱</span>
+
+      <h3 id="guideGreenGram">Green Gram</h3>
+
+      <p id="guideGreenGramDesc">
+        Green Gram Cultivation
+      </p>
+
+      <span class="guide-view" data-guide-view>
+        View Guide →
+      </span>
+
+    </button>
+
+
+    <!-- COTTON -->
+
+    <button
+      type="button"
+      class="cultivation-card"
+      data-crop="cotton"
+    >
+
+      <span class="cultivation-icon">☁️</span>
+
+      <h3 id="guideCotton">Cotton</h3>
+
+      <p id="guideCottonDesc">
+        Cotton Cultivation
+      </p>
+
+      <span class="guide-view" data-guide-view>
+        View Guide →
+      </span>
+
+    </button>
+
+  </div>
+
+
+  <!-- SELECTED CROP DETAILS -->
+
+  <div id="cultivationDetails" hidden>
+
+    <div class="cultivation-detail-header">
+
+      <span id="selectedCropIcon">🌾</span>
+
+      <div>
+
+        <h2 id="selectedCropName"></h2>
+
+        <p id="selectedCropDescription"></p>
+
+      </div>
+
+      <button
+        type="button"
+        id="closeCultivationBtn"
+        aria-label="Close crop guide"
+      >
+        ✕
+      </button>
+
+    </div>
+
+
+    <!-- CROP IMAGE -->
+
+    <div class="cultivation-image-wrapper">
+
+      <img
+        id="cultivationImage"
+        alt=""
+        loading="lazy"
+        hidden
+      >
+
+    </div>
+
+
+    <!-- CULTIVATION INFORMATION -->
+
+    <div class="cultivation-info-grid">
+
+      <div class="cultivation-info-card">
+
+        <span>🟤</span>
+
+        <h3 id="guideSoilLabel">
+          Suitable Soil
+        </h3>
+
+        <p id="guideSoilValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>📅</span>
+
+        <h3 id="guideSeasonLabel">
+          Growing Season
+        </h3>
+
+        <p id="guideSeasonValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>💧</span>
+
+        <h3 id="guideWaterLabel">
+          Water Requirements
+        </h3>
+
+        <p id="guideWaterValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>🚜</span>
+
+        <h3 id="guideLandLabel">
+          Land Preparation
+        </h3>
+
+        <p id="guideLandValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>🌱</span>
+
+        <h3 id="guideSowingLabel">
+          Sowing Method
+        </h3>
+
+        <p id="guideSowingValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>🪴</span>
+
+        <h3 id="guideFertilizerLabel">
+          Fertilizer Guidance
+        </h3>
+
+        <p id="guideFertilizerValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>🐛</span>
+
+        <h3 id="guidePestLabel">
+          Pest and Disease Management
+        </h3>
+
+        <p id="guidePestValue"></p>
+
+      </div>
+
+
+      <div class="cultivation-info-card">
+
+        <span>🌾</span>
+
+        <h3 id="guideHarvestLabel">
+          Harvesting
+        </h3>
+
+        <p id="guideHarvestValue"></p>
+
+      </div>
+
+    </div>
+
+
+    <!-- FARMING TIPS -->
+
+    <div class="cultivation-tips">
+
+      <h3 id="guideTipsTitle">
+        💡 Important Farming Tips
+      </h3>
+
+      <p id="guideTipsValue"></p>
+
+    </div>
+
+
+    <!-- VOICE GUIDE -->
+
+    <button type="button" id="listenCultivationBtn">
+      🔊 Listen to Cultivation Guide
+    </button>
+
+    <p id="guideVoiceStatus" role="status"></p>
+
+
+    <!-- DISCLAIMER -->
+
+    <p class="cultivation-disclaimer" id="guideDisclaimer">
+
+      This is general farming guidance.
+      Consult local agricultural experts for
+      crop-specific recommendations.
+
+    </p>
+
+  </div>
+
+</section>
+<!-- 200 CROP KNOWLEDGE CENTRE -->
+
+<section class="catalogue-panel" id="catalogueSection">
+
+  <h2 id="catalogueTitle">
+    🌱 Crop Knowledge Centre
+  </h2>
+
+  <p id="catalogueDescription">
+    Explore 200 different crops
+  </p>
+
+  <input
+    type="search"
+    id="catalogueSearch"
+    placeholder="🔍 Search crop name..."
+  >
+
+  <select id="catalogueCategory">
+    <option value="all">All Crops</option>
+    <option value="cereals">Cereals</option>
+    <option value="millets">Millets</option>
+    <option value="pulses">Pulses</option>
+    <option value="oilseeds">Oilseeds</option>
+    <option value="vegetables">Vegetables</option>
+    <option value="fruits">Fruits</option>
+    <option value="spices">Spices</option>
+    <option value="plantation">Plantation Crops</option>
+    <option value="commercial">Commercial Crops</option>
+    <option value="flowers">Flowers</option>
+    <option value="medicinal">Medicinal Plants</option>
+    <option value="fodder">Fodder Crops</option>
+  </select>
+
+  <p id="catalogueCount" role="status">
+    Loading crops...
+  </p>
+
+  <div id="catalogueGrid"></div>
+
+</section>
+    <section class="assistant-panel">
+
+      <h2>🎙️ SmartCrop Voice Assistant</h2>
+
+      <label for="voiceLanguage">
+        Choose voice language
+      </label>
+
+      <select id="voiceLanguage">
+
+        <option value="en-IN">English</option>
+        <option value="kn-IN">Kannada</option>
+        <option value="hi-IN">Hindi</option>
+
+      </select>
+
+      <button id="micBtn" type="button">
+        🎤 Speak
+      </button>
+
+      <p id="voiceStatus"></p>
+
+      <p id="voiceTranscript"></p>
+
+      <div id="voiceAnswer"></div>
+
+      <button id="speakAnswerBtn" type="button">
+        🔊 Speak Answer
+      </button>
+
+    </section>
+
+
+    <!-- CHATBOT -->
+
+    <section class="chatbot-panel">
+
+      <h2>🤖 SmartCrop Farming Assistant</h2>
+
+      <div id="chatMessages"></div>
+
+      <form id="chatForm">
+
+        <input
+          type="text"
+          id="chatInput"
+          placeholder="Ask your farming question..."
+          required
+        >
+
+        <button type="submit" id="sendBtn">
+          Send
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <p>
+        © 2026 SmartCrop | Smart Farming for Better Future
+      </p>
+
+      <small>
+        Crop income, investment and profit values are estimates,
+        not guaranteed results.
+      </small>
+
+    </footer>
+
+  </div>
+
+
+  <!-- SELECTION CONTROLS -->
+
+  <script>
+
+    document.querySelectorAll(
+      'input[name="seasonChoice"]'
+    ).forEach(input => {
+
+      input.addEventListener("change", () => {
+        document.getElementById("season").value = input.value;
+      });
+
+    });
+
+    document.querySelectorAll(
+      'input[name="rainChoice"]'
+    ).forEach(input => {
+
+      input.addEventListener("change", () => {
+        document.getElementById("rainfall").value = input.value;
+      });
+
+    });
+
+    document.querySelectorAll(
+      'input[name="waterChoice"]'
+    ).forEach(input => {
+
+      input.addEventListener("change", () => {
+        document.getElementById("water").value = input.value;
+      });
+
+    });
+
+  </script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

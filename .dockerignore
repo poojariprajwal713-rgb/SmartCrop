@@ -1,0 +1,12 @@
+node_modules/
+.git/
+.env
+.env.*
+users.json
+**/*backup*
+server.before-*.js
+*.mp3
+__pycache__/
+.venv/
+generateCropDetails.js
+durations.txt

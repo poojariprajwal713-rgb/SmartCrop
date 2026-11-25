@@ -1,0 +1,3731 @@
+[
+  {
+    "id": "maize",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1200,
+    "income": 42000,
+    "cost": 22000
+  },
+  {
+    "id": "groundnut",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1000,
+    "income": 38000,
+    "cost": 20000
+  },
+  {
+    "id": "ragi",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1000,
+    "income": 35000,
+    "cost": 16000
+  },
+  {
+    "id": "paddy",
+    "soils": [
+      "clay",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "high",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 3000,
+    "income": 55000,
+    "cost": 30000
+  },
+  {
+    "id": "greenGram",
+    "soils": [
+      "red",
+      "sandy",
+      "black"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 200,
+    "maxRain": 800,
+    "income": 30000,
+    "cost": 14000
+  },
+  {
+    "id": "cotton",
+    "soils": [
+      "black",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 50000,
+    "cost": 28000
+  },
+  {
+    "id": "wheat",
+    "soils": [
+      "alluvial",
+      "black"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 900,
+    "income": 40000,
+    "cost": 22000
+  },
+  {
+    "id": "jowar",
+    "soils": [
+      "black",
+      "red"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1000,
+    "income": 30000,
+    "cost": 15000
+  },
+  {
+    "id": "bajra",
+    "soils": [
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 200,
+    "maxRain": 600,
+    "income": 28000,
+    "cost": 14000
+  },
+  {
+    "id": "foxtailMillet",
+    "soils": [
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 32000,
+    "cost": 15000
+  },
+  {
+    "id": "littleMillet",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 30000,
+    "cost": 14000
+  },
+  {
+    "id": "kodoMillet",
+    "soils": [
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 28000,
+    "cost": 13000
+  },
+  {
+    "id": "barnyardMillet",
+    "soils": [
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1200,
+    "income": 32000,
+    "cost": 15000
+  },
+  {
+    "id": "blackGram",
+    "soils": [
+      "black",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 28000,
+    "cost": 12000
+  },
+  {
+    "id": "chickpea",
+    "soils": [
+      "black",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 38000,
+    "cost": 18000
+  },
+  {
+    "id": "pigeonPea",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 42000,
+    "cost": 20000
+  },
+  {
+    "id": "horseGram",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 200,
+    "maxRain": 800,
+    "income": 24000,
+    "cost": 11000
+  },
+  {
+    "id": "cowpea",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1000,
+    "income": 35000,
+    "cost": 16000
+  },
+  {
+    "id": "sunflower",
+    "soils": [
+      "black",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 35000,
+    "cost": 18000
+  },
+  {
+    "id": "sesame",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 32000,
+    "cost": 14000
+  },
+  {
+    "id": "mustard",
+    "soils": [
+      "alluvial",
+      "black",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 250,
+    "maxRain": 600,
+    "income": 36000,
+    "cost": 17000
+  },
+  {
+    "id": "soybean",
+    "soils": [
+      "black",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 40000,
+    "cost": 22000
+  },
+  {
+    "id": "sugarcane",
+    "soils": [
+      "black",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 750,
+    "maxRain": 2000,
+    "income": 150000,
+    "cost": 90000
+  },
+  {
+    "id": "coffee",
+    "soils": [
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1200,
+    "maxRain": 2500,
+    "income": 120000,
+    "cost": 65000
+  },
+  {
+    "id": "tea",
+    "soils": [
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 110000,
+    "cost": 70000
+  },
+  {
+    "id": "cashew",
+    "soils": [
+      "laterite",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 2500,
+    "income": 80000,
+    "cost": 35000
+  },
+  {
+    "id": "arecanut",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 4000,
+    "income": 250000,
+    "cost": 100000
+  },
+  {
+    "id": "coconut",
+    "soils": [
+      "sandy",
+      "laterite",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 3000,
+    "income": 100000,
+    "cost": 45000
+  },
+  {
+    "id": "banana",
+    "soils": [
+      "alluvial",
+      "red",
+      "black"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 180000,
+    "cost": 100000
+  },
+  {
+    "id": "tomato",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 140000,
+    "cost": 75000
+  },
+  {
+    "id": "mango",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 750,
+    "maxRain": 2500,
+    "income": 120000,
+    "cost": 50000
+  },
+  {
+    "id": "papaya",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 800,
+    "maxRain": 1500,
+    "income": 160000,
+    "cost": 80000
+  },
+  {
+    "id": "guava",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 110000,
+    "cost": 50000
+  },
+  {
+    "id": "jackfruit",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 3500,
+    "income": 90000,
+    "cost": 35000
+  },
+  {
+    "id": "pineapple",
+    "soils": [
+      "laterite",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 150000,
+    "cost": 85000
+  },
+  {
+    "id": "watermelon",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 600,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "pomegranate",
+    "soils": [
+      "red",
+      "sandy",
+      "black"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 180000,
+    "cost": 85000
+  },
+  {
+    "id": "grapes",
+    "soils": [
+      "red",
+      "black",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 900,
+    "income": 250000,
+    "cost": 150000
+  },
+  {
+    "id": "potato",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 110000,
+    "cost": 65000
+  },
+  {
+    "id": "onion",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 350,
+    "maxRain": 800,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "brinjal",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 120000,
+    "cost": 60000
+  },
+  {
+    "id": "okra",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 90000,
+    "cost": 45000
+  },
+  {
+    "id": "carrot",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 350,
+    "maxRain": 700,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "cabbage",
+    "soils": [
+      "alluvial",
+      "red",
+      "black"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 90000,
+    "cost": 50000
+  },
+  {
+    "id": "cauliflower",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "cucumber",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 900,
+    "income": 100000,
+    "cost": 45000
+  },
+  {
+    "id": "chilli",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 150000,
+    "cost": 85000
+  },
+  {
+    "id": "turmeric",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 180000,
+    "cost": 95000
+  },
+  {
+    "id": "ginger",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 220000,
+    "cost": 130000
+  },
+  {
+    "id": "blackPepper",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 150000,
+    "cost": 60000
+  },
+  {
+    "id": "garlic",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 130000,
+    "cost": 70000
+  },
+  {
+    "id": "cardamom",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 4000,
+    "income": 200000,
+    "cost": 120000
+  },
+  {
+    "id": "coriander",
+    "soils": [
+      "black",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 45000,
+    "cost": 22000
+  },
+  {
+    "id": "cumin",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 200,
+    "maxRain": 500,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "fenugreek",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 40000,
+    "cost": 18000
+  },
+  {
+    "id": "clove",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 120000,
+    "cost": 50000
+  },
+  {
+    "id": "cinnamon",
+    "soils": [
+      "laterite",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1250,
+    "maxRain": 2500,
+    "income": 100000,
+    "cost": 45000
+  },
+  {
+    "id": "nutmeg",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3500,
+    "income": 150000,
+    "cost": 60000
+  },
+  {
+    "id": "fennel",
+    "soils": [
+      "alluvial",
+      "black",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 60000,
+    "cost": 28000
+  },
+  {
+    "id": "curryLeaf",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 100000,
+    "cost": 40000
+  },
+  {
+    "id": "radish",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "beetroot",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 350,
+    "maxRain": 800,
+    "income": 80000,
+    "cost": 35000
+  },
+  {
+    "id": "pumpkin",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "bottleGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 90000,
+    "cost": 45000
+  },
+  {
+    "id": "bitterGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 110000,
+    "cost": 55000
+  },
+  {
+    "id": "ridgeGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 95000,
+    "cost": 45000
+  },
+  {
+    "id": "snakeGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 95000,
+    "cost": 45000
+  },
+  {
+    "id": "ashGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "drumstick",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1000,
+    "income": 120000,
+    "cost": 50000
+  },
+  {
+    "id": "spinach",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 60000,
+    "cost": 25000
+  },
+  {
+    "id": "amaranth",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 1000,
+    "income": 55000,
+    "cost": 22000
+  },
+  {
+    "id": "capsicum",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 180000,
+    "cost": 110000
+  },
+  {
+    "id": "frenchBeans",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 100000,
+    "cost": 50000
+  },
+  {
+    "id": "clusterBeans",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 250,
+    "maxRain": 700,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "greenPeas",
+    "soils": [
+      "alluvial",
+      "red",
+      "black"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 350,
+    "maxRain": 800,
+    "income": 80000,
+    "cost": 40000
+  },
+  {
+    "id": "sweetPotato",
+    "soils": [
+      "sandy",
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1300,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "tapioca",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 2000,
+    "income": 100000,
+    "cost": 45000
+  },
+  {
+    "id": "elephantFootYam",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "summer",
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 160000,
+    "cost": 85000
+  },
+  {
+    "id": "taro",
+    "soils": [
+      "clay",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 100000,
+    "cost": 50000
+  },
+  {
+    "id": "broccoli",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 130000,
+    "cost": 70000
+  },
+  {
+    "id": "lettuce",
+    "soils": [
+      "alluvial",
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "orange",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 140000,
+    "cost": 65000
+  },
+  {
+    "id": "lemon",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1500,
+    "income": 130000,
+    "cost": 55000
+  },
+  {
+    "id": "sweetLime",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1200,
+    "income": 150000,
+    "cost": 70000
+  },
+  {
+    "id": "sapota",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 750,
+    "maxRain": 2000,
+    "income": 110000,
+    "cost": 45000
+  },
+  {
+    "id": "custardApple",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 90000,
+    "cost": 35000
+  },
+  {
+    "id": "jamun",
+    "soils": [
+      "alluvial",
+      "red",
+      "black"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 700,
+    "maxRain": 2500,
+    "income": 80000,
+    "cost": 35000
+  },
+  {
+    "id": "amla",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 95000,
+    "cost": 40000
+  },
+  {
+    "id": "dragonFruit",
+    "soils": [
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1500,
+    "income": 250000,
+    "cost": 120000
+  },
+  {
+    "id": "strawberry",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 300000,
+    "cost": 180000
+  },
+  {
+    "id": "avocado",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 200000,
+    "cost": 90000
+  },
+  {
+    "id": "muskmelon",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 250,
+    "maxRain": 600,
+    "income": 95000,
+    "cost": 50000
+  },
+  {
+    "id": "fig",
+    "soils": [
+      "red",
+      "black",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 150000,
+    "cost": 70000
+  },
+  {
+    "id": "tamarind",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 500,
+    "maxRain": 1500,
+    "income": 75000,
+    "cost": 25000
+  },
+  {
+    "id": "rose",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 200000,
+    "cost": 110000
+  },
+  {
+    "id": "jasmine",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 220000,
+    "cost": 100000
+  },
+  {
+    "id": "marigold",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 110000,
+    "cost": 55000
+  },
+  {
+    "id": "chrysanthemum",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 150000,
+    "cost": 80000
+  },
+  {
+    "id": "hibiscus",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 700,
+    "maxRain": 2000,
+    "income": 90000,
+    "cost": 40000
+  },
+  {
+    "id": "lotus",
+    "soils": [
+      "clay",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 800,
+    "maxRain": 3000,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "barley",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "black"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 250,
+    "maxRain": 600,
+    "income": 32000,
+    "cost": 16000
+  },
+  {
+    "id": "oats",
+    "soils": [
+      "alluvial",
+      "black",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 35000,
+    "cost": 18000
+  },
+  {
+    "id": "prosoMillet",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 200,
+    "maxRain": 600,
+    "income": 28000,
+    "cost": 13000
+  },
+  {
+    "id": "buckwheat",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 40000,
+    "cost": 18000
+  },
+  {
+    "id": "quinoa",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 200,
+    "maxRain": 600,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "rye",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 30000,
+    "cost": 15000
+  },
+  {
+    "id": "lentil",
+    "soils": [
+      "alluvial",
+      "black",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 250,
+    "maxRain": 600,
+    "income": 38000,
+    "cost": 18000
+  },
+  {
+    "id": "kidneyBean",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 65000,
+    "cost": 32000
+  },
+  {
+    "id": "mothBean",
+    "soils": [
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 150,
+    "maxRain": 500,
+    "income": 26000,
+    "cost": 11000
+  },
+  {
+    "id": "lablab",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1200,
+    "income": 45000,
+    "cost": 20000
+  },
+  {
+    "id": "riceBean",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 700,
+    "maxRain": 1800,
+    "income": 35000,
+    "cost": 16000
+  },
+  {
+    "id": "fabaBean",
+    "soils": [
+      "alluvial",
+      "black",
+      "clay"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 900,
+    "income": 42000,
+    "cost": 20000
+  },
+  {
+    "id": "safflower",
+    "soils": [
+      "black",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 250,
+    "maxRain": 600,
+    "income": 35000,
+    "cost": 16000
+  },
+  {
+    "id": "castor",
+    "soils": [
+      "red",
+      "sandy",
+      "black"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 45000,
+    "cost": 22000
+  },
+  {
+    "id": "linseed",
+    "soils": [
+      "black",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 38000,
+    "cost": 18000
+  },
+  {
+    "id": "niger",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1500,
+    "income": 28000,
+    "cost": 12000
+  },
+  {
+    "id": "oilPalm",
+    "soils": [
+      "alluvial",
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1800,
+    "maxRain": 3500,
+    "income": 180000,
+    "cost": 90000
+  },
+  {
+    "id": "rubber",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1800,
+    "maxRain": 4000,
+    "income": 140000,
+    "cost": 70000
+  },
+  {
+    "id": "cocoa",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 120000,
+    "cost": 55000
+  },
+  {
+    "id": "vanilla",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 300000,
+    "cost": 180000
+  },
+  {
+    "id": "betelLeaf",
+    "soils": [
+      "red",
+      "alluvial",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 250000,
+    "cost": 150000
+  },
+  {
+    "id": "jute",
+    "soils": [
+      "alluvial",
+      "clay"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 45000,
+    "cost": 25000
+  },
+  {
+    "id": "mulberry",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "bamboo",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 800,
+    "maxRain": 3000,
+    "income": 90000,
+    "cost": 35000
+  },
+  {
+    "id": "apple",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 750,
+    "maxRain": 1500,
+    "income": 220000,
+    "cost": 120000
+  },
+  {
+    "id": "pear",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1200,
+    "income": 150000,
+    "cost": 75000
+  },
+  {
+    "id": "peach",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 140000,
+    "cost": 70000
+  },
+  {
+    "id": "plum",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1200,
+    "income": 130000,
+    "cost": 65000
+  },
+  {
+    "id": "apricot",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 120000,
+    "cost": 60000
+  },
+  {
+    "id": "litchi",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 180000,
+    "cost": 80000
+  },
+  {
+    "id": "kiwi",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 800,
+    "maxRain": 1600,
+    "income": 250000,
+    "cost": 130000
+  },
+  {
+    "id": "passionFruit",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 160000,
+    "cost": 80000
+  },
+  {
+    "id": "rambutan",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1800,
+    "maxRain": 3500,
+    "income": 200000,
+    "cost": 95000
+  },
+  {
+    "id": "mangosteen",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1800,
+    "maxRain": 3500,
+    "income": 220000,
+    "cost": 100000
+  },
+  {
+    "id": "breadfruit",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 90000,
+    "cost": 40000
+  },
+  {
+    "id": "starFruit",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 110000,
+    "cost": 50000
+  },
+  {
+    "id": "datePalm",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 0,
+    "maxRain": 300,
+    "income": 250000,
+    "cost": 130000
+  },
+  {
+    "id": "cherry",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1000,
+    "income": 240000,
+    "cost": 130000
+  },
+  {
+    "id": "blueberry",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 750,
+    "maxRain": 1500,
+    "income": 300000,
+    "cost": 200000
+  },
+  {
+    "id": "raspberry",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1200,
+    "income": 250000,
+    "cost": 150000
+  },
+  {
+    "id": "tulsi",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 60000,
+    "cost": 28000
+  },
+  {
+    "id": "aloeVera",
+    "soils": [
+      "sandy",
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 200,
+    "maxRain": 700,
+    "income": 80000,
+    "cost": 35000
+  },
+  {
+    "id": "ashwagandha",
+    "soils": [
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 300,
+    "maxRain": 750,
+    "income": 75000,
+    "cost": 30000
+  },
+  {
+    "id": "brahmi",
+    "soils": [
+      "clay",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 90000,
+    "cost": 45000
+  },
+  {
+    "id": "neem",
+    "soils": [
+      "red",
+      "sandy",
+      "black",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 400,
+    "maxRain": 1500,
+    "income": 50000,
+    "cost": 20000
+  },
+  {
+    "id": "lemongrass",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 700,
+    "maxRain": 2000,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "mint",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 100000,
+    "cost": 50000
+  },
+  {
+    "id": "shatavari",
+    "soils": [
+      "sandy",
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 140000,
+    "cost": 65000
+  },
+  {
+    "id": "kalmegh",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 800,
+    "maxRain": 2000,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "vetiver",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 2500,
+    "income": 90000,
+    "cost": 45000
+  },
+  {
+    "id": "tuberose",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 180000,
+    "cost": 95000
+  },
+  {
+    "id": "gerbera",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 350000,
+    "cost": 250000
+  },
+  {
+    "id": "orchid",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3500,
+    "income": 400000,
+    "cost": 300000
+  },
+  {
+    "id": "carnation",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 300000,
+    "cost": 200000
+  },
+  {
+    "id": "gladiolus",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 180000,
+    "cost": 100000
+  },
+  {
+    "id": "anthurium",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 3000,
+    "income": 350000,
+    "cost": 250000
+  },
+  {
+    "id": "dahlia",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 120000,
+    "cost": 65000
+  },
+  {
+    "id": "crossandra",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 150000,
+    "cost": 70000
+  },
+  {
+    "id": "aster",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 100000,
+    "cost": 50000
+  },
+  {
+    "id": "napierGrass",
+    "soils": [
+      "red",
+      "black",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 750,
+    "maxRain": 2500,
+    "income": 70000,
+    "cost": 35000
+  },
+  {
+    "id": "lucerne",
+    "soils": [
+      "alluvial",
+      "black",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 350,
+    "maxRain": 1000,
+    "income": 80000,
+    "cost": 40000
+  },
+  {
+    "id": "berseem",
+    "soils": [
+      "alluvial",
+      "clay",
+      "black"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 65000,
+    "cost": 32000
+  },
+  {
+    "id": "guineaGrass",
+    "soils": [
+      "red",
+      "alluvial",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 800,
+    "maxRain": 2500,
+    "income": 60000,
+    "cost": 30000
+  },
+  {
+    "id": "paraGrass",
+    "soils": [
+      "clay",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 3000,
+    "income": 55000,
+    "cost": 25000
+  },
+  {
+    "id": "stevia",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 120000,
+    "cost": 65000
+  },
+  {
+    "id": "sarpagandha",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 150000,
+    "cost": 75000
+  },
+  {
+    "id": "giloy",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1800,
+    "income": 70000,
+    "cost": 30000
+  },
+  {
+    "id": "senna",
+    "soils": [
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 250,
+    "maxRain": 600,
+    "income": 65000,
+    "cost": 28000
+  },
+  {
+    "id": "safedMusli",
+    "soils": [
+      "sandy",
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1200,
+    "income": 200000,
+    "cost": 120000
+  },
+  {
+    "id": "ajwain",
+    "soils": [
+      "black",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 55000,
+    "cost": 25000
+  },
+  {
+    "id": "dill",
+    "soils": [
+      "alluvial",
+      "red",
+      "black"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 50000,
+    "cost": 22000
+  },
+  {
+    "id": "starAnise",
+    "soils": [
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1200,
+    "maxRain": 2500,
+    "income": 140000,
+    "cost": 65000
+  },
+  {
+    "id": "saffron",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 300,
+    "maxRain": 700,
+    "income": 400000,
+    "cost": 350000
+  },
+  {
+    "id": "bayLeaf",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 80000,
+    "cost": 35000
+  },
+  {
+    "id": "asparagus",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 180000,
+    "cost": 100000
+  },
+  {
+    "id": "celery",
+    "soils": [
+      "alluvial",
+      "red",
+      "clay"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 500,
+    "maxRain": 1200,
+    "income": 100000,
+    "cost": 55000
+  },
+  {
+    "id": "leek",
+    "soils": [
+      "alluvial",
+      "sandy",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 900,
+    "income": 110000,
+    "cost": 60000
+  },
+  {
+    "id": "turnip",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "zucchini",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 900,
+    "income": 120000,
+    "cost": 65000
+  },
+  {
+    "id": "chayote",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 100000,
+    "cost": 50000
+  },
+  {
+    "id": "ivyGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 110000,
+    "cost": 55000
+  },
+  {
+    "id": "pointedGourd",
+    "soils": [
+      "sandy",
+      "alluvial",
+      "red"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 700,
+    "maxRain": 1500,
+    "income": 130000,
+    "cost": 65000
+  },
+  {
+    "id": "spineGourd",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 600,
+    "maxRain": 1500,
+    "income": 150000,
+    "cost": 80000
+  },
+  {
+    "id": "kohlrabi",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 800,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "kale",
+    "soils": [
+      "alluvial",
+      "red",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1000,
+    "income": 120000,
+    "cost": 65000
+  },
+  {
+    "id": "waterSpinach",
+    "soils": [
+      "clay",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 800,
+    "maxRain": 2500,
+    "income": 65000,
+    "cost": 30000
+  },
+  {
+    "id": "wingedBean",
+    "soils": [
+      "red",
+      "laterite",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1000,
+    "maxRain": 2500,
+    "income": 85000,
+    "cost": 40000
+  },
+  {
+    "id": "bael",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 400,
+    "maxRain": 1500,
+    "income": 80000,
+    "cost": 30000
+  },
+  {
+    "id": "woodApple",
+    "soils": [
+      "red",
+      "sandy",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 400,
+    "maxRain": 1200,
+    "income": 70000,
+    "cost": 25000
+  },
+  {
+    "id": "ber",
+    "soils": [
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "low"
+    ],
+    "minRain": 200,
+    "maxRain": 800,
+    "income": 90000,
+    "cost": 35000
+  },
+  {
+    "id": "kokum",
+    "soils": [
+      "laterite",
+      "red"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1500,
+    "maxRain": 4000,
+    "income": 110000,
+    "cost": 45000
+  },
+  {
+    "id": "pomelo",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 130000,
+    "cost": 60000
+  },
+  {
+    "id": "longan",
+    "soils": [
+      "red",
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 180000,
+    "cost": 85000
+  },
+  {
+    "id": "durian",
+    "soils": [
+      "laterite",
+      "red",
+      "alluvial"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "high"
+    ],
+    "minRain": 1800,
+    "maxRain": 3500,
+    "income": 250000,
+    "cost": 150000
+  },
+  {
+    "id": "waterApple",
+    "soils": [
+      "alluvial",
+      "red",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium",
+      "high"
+    ],
+    "minRain": 1200,
+    "maxRain": 3000,
+    "income": 120000,
+    "cost": 55000
+  },
+  {
+    "id": "macadamia",
+    "soils": [
+      "red",
+      "laterite",
+      "sandy"
+    ],
+    "seasons": [
+      "kharif"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 1000,
+    "maxRain": 2000,
+    "income": 220000,
+    "cost": 120000
+  },
+  {
+    "id": "almond",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 300,
+    "maxRain": 800,
+    "income": 180000,
+    "cost": 95000
+  },
+  {
+    "id": "walnut",
+    "soils": [
+      "alluvial",
+      "sandy"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "medium"
+    ],
+    "minRain": 700,
+    "maxRain": 1500,
+    "income": 200000,
+    "cost": 100000
+  },
+  {
+    "id": "pistachio",
+    "soils": [
+      "sandy",
+      "alluvial"
+    ],
+    "seasons": [
+      "rabi"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 200,
+    "maxRain": 500,
+    "income": 250000,
+    "cost": 150000
+  },
+  {
+    "id": "sunnHemp",
+    "soils": [
+      "red",
+      "sandy",
+      "alluvial",
+      "laterite"
+    ],
+    "seasons": [
+      "kharif",
+      "summer"
+    ],
+    "water": [
+      "low",
+      "medium"
+    ],
+    "minRain": 400,
+    "maxRain": 1200,
+    "income": 25000,
+    "cost": 15000
+  }
+]
